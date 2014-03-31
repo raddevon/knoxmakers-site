@@ -88,13 +88,14 @@ USE_SOUTH = True
 # In the format (('Full Name', 'email@example.com'),
 #                ('Full Name', 'anotheremail@example.com'))
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+    ('Devon Campbell', 'devon@radworks.io'),
+    ('Devin West', 'west.devin@gmail.com')
 )
 MANAGERS = ADMINS
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -103,7 +104,7 @@ ALLOWED_HOSTS = []
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = None
+TIME_ZONE = 'America/New_York'
 
 # If you set this to True, Django will use timezone-aware datetimes.
 USE_TZ = True
@@ -231,6 +232,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
+    "knoxmakers_theme",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
